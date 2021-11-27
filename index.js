@@ -13,8 +13,9 @@ var hue;
 function init() {
   canvas = document.querySelector("canvas");
   context = canvas.getContext("2d");
-  w = canvas.width;
-  h = canvas.height;
+  h = canvas.height = window.innerHeight * 0.95;
+  w = canvas.width = window.innerWidth * 0.45;
+ 
   
   canvas.onpointermove = handlePointerMove; // cursor is moving - (we have to draw between starting and ending points)
   canvas.onpointerdown = handlePointerDown; // mouse key is pressed - (we have to start drawing)

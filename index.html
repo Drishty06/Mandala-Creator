@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Creator </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" class="icon" href="mandala vector/5sm6_t1vv_200323-modified.png">
+
+    <!-- satisfy font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- bebas neue font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- cookie font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <script src="index.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="box">
+        <div class="glowingBox">
+            <canvas width="650%" height="650%">
+                <p>Your browser doesn't support canvas. </p>
+            </canvas>
+        </div>
+
+
+        <!-- clear button and color picker -->
+        <div class="optionbg">
+            <div class="option">
+                <h1>Mandala Creator</h1>
+                <p>Draw your
+                    <img class="heart" src="images/growing_heart.gif" alt="">out
+                </p>
+
+                <!-- color input -->
+                <div class="optionsMainContainer">
+                    <div class="optionsFont">
+                        <div class="optionHead">🎨Brush</div>
+                        <input type="color" class="color" value="#0fffe3" />
+                    </div>
+                    <br>
+                </div>
+
+                <!-- line width input -->
+                <div class="optionsMainContainer">
+                    <div class="optionsFont">
+                        <div class="optionHead">🖌️Line Width</div>
+                        <input type="number" id="lineWidth" name="parts" min="1" max="24" step="1" value="4" />
+                    </div>
+                </div>
+
+                <!-- magic brush -->
+                <div class="optionsMainContainer">
+                    <div class="optionsFont">
+                        <div class="optionHead">🪄Magic Brush</div>
+                        <input type="checkbox" id="magicBrush" name="magicbrush" />
+                    </div>
+                </div>
+
+                <!-- buttons -->
+                <div class="optionsMainContainer">
+                    <div class="buttons">
+                        <div class="clear buttonDesign">Clear</div>
+                        <button type="button" class="downloadButton buttonDesign" id="downloadButton"
+                            onclick="download_image()">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+body {
+  background-color:#fff2ea ;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+canvas {
+  touch-action: none;
+  background-color: #18191a ;
+  border-radius: 200%;
+  position: relative;
+  margin-top: 0.5%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96%;
+}
+
+
+.option {
+  height: 15%;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.glowingBox{
+    margin-top: 1%;
+    height: 100%;
+    width: 47%;
+    border-radius: 200%;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    animation: glow 4s linear infinite;
+    border: 2px solid black;
+    box-shadow: 5px 8px 5px rgb(109, 109, 109);
+}
+
+@keyframes glow {
+  0%{
+      background-position: -100%;
+  }
+100% {
+      background-position: 100%;
+}
+}
+
+.optionbg{
+    background-color: #18191a;
+    box-shadow: 2px 5px 8px 5px rgb(109, 109, 109);    
+    height: 80%;
+    width: 28%;
+    margin-left: 5%;
+    border-radius: 5%;
+}
+
+.option h1{
+  font-family: 'Bebas Neue', cursive;
+  color: #fff2ea;
+  margin: 0;
+  margin-top: 4%;
+}
+
+.option p{
+  font-family: 'Cookie', cursive;
+  color: #fff2ea;
+  font-size: 200%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff2b2b;
+  box-shadow: 2px 2px 4px 2px rgba(230, 112, 171, 0.411);  
+}
+
+.heart{
+  width: 70px;
+  height: auto;
+  position: relative;
+}
+
+.color{
+  border:0;
+  background:none;
+  padding:0;
+  width: 40%;
+  height: 56%;
+  cursor: pointer;
+}
+
+.optionsMainContainer{
+  height: 100%;
+  margin-top: 5%;
+}
+
+.optionsFont{
+  font-family: 'Bebas Neue', cursive;
+  height: 100%;
+  font-size: 133%;
+  color: #fff2ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.optionHead{
+  text-align: left;
+  height: 42%;
+  margin-right: 2%;
+}
+
+#lineWidth{
+  padding:0;
+  width: 38%;
+  height: 38%;
+  cursor: pointer;
+  margin-right: 4%;
+  text-align: center;
+  font-size: 80%;
+}
+
+#magicBrush{
+  padding:0;
+  width: 38%;
+  height: 38%;
+  cursor: pointer;
+  margin-right: 4%;
+  position: relative;
+  right: 17%;
+}
+
+.buttons{
+  height: 100%;
+}
+
+.buttonDesign {
+  min-width: 25%;
+  color: #fff2ea;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #ff2b2b;
+  box-shadow: 2px 2px 2px rgba(230, 112, 171, 0.411); 
+  z-index: 1;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  font-size: 128%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.buttonDesign:hover:after {
+  width: 100%;
+  left: 0;
+}
+.buttonDesign:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+  background-color: #fa7d83da;
+  right: 0;
+}
+.buttonDesign:active {
+  top: 2px;
+}

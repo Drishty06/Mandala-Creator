@@ -9,7 +9,7 @@ body {
 canvas {
   touch-action: none;
   background-color: #18191a ;
-  border-radius: 200%;
+  border-radius: 50%;
   position: relative;
   margin-top: 0.5%;
 }
@@ -30,8 +30,8 @@ canvas {
 
 .glowingBox{
     margin-top: 1%;
-    height: 100%;
-    width: 47%;
+    height: 660px;
+    width: 660px;
     border-radius: 200%;
     background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000);
     background-size: 400%;
@@ -63,6 +63,7 @@ canvas {
   color: #fff2ea;
   margin: 0;
   margin-top: 4%;
+  letter-spacing: 1px;
 }
 
 .option p{
@@ -167,7 +168,7 @@ canvas {
 }
 .buttonDesign:after {
   border-radius: 5px;
-  position: absolute;
+  /* position: absolute; */
   content: "";
   width: 0;
   height: 100%;

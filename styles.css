@@ -83,13 +83,15 @@ canvas {
 }
 
 .color{
-  border:0;
-  background:none;
-  padding:0;
-  width: 40%;
-  height: 56%;
-  cursor: pointer;
-  margin-left: -8.5%;
+  border: 0;
+    background: none;
+    padding: 0;
+    width: 40%;
+    height: 56%;
+    cursor: pointer;
+    margin-left: -7.5%;
+    position: relative;
+    left: 8.5%;
 }
 
 .optionsMainContainer{
